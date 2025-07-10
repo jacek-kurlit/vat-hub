@@ -44,7 +44,7 @@ jobs:
         # You can remove the one that doesn't apply to your app to speed up the workflow a bit.
 
       - name: Run Rust tests
-        run: cargo test
+        run: cargo test --release
         working-directory: src-tauri
 
       - name: install frontend dependencies
